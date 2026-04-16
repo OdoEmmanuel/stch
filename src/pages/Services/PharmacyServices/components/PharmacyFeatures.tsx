@@ -13,7 +13,7 @@ export const PharmacyFeatures: React.FC = () => {
           {pharmacyContent.features.map((feature, idx) => (
             <div 
               key={idx} 
-              className="bg-white rounded-2xl p-8 shadow-sm transition-all hover:shadow-md"
+              className="bg-white rounded-2xl p-8 border-l-8 border-[#AEC0A1] shadow-sm transition-transform hover:translate-x-2 duration-300"
             >
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">{feature.title}</h3>
               <p className="text-gray-600 text-lg leading-relaxed">{feature.description}</p>
