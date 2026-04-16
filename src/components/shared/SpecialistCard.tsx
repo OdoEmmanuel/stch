@@ -61,7 +61,7 @@ export const SpecialistCard: React.FC<SpecialistCardProps> = ({
       </div>
 
       <Button 
-        className={`w-full py-4 text-base font-bold rounded-full ${isHighlighted ? 'bg-white text-[#4F7733]! hover:bg-gray-100' : 'bg-[#4F7733] text-white hover:bg-[#3d5c27]'}`}
+        className={`w-full py-4 text-base font-bold rounded-full ${isHighlighted ? 'bg-white text-[#4F7733]! hover:bg-gray-200' : 'bg-[#4F7733] text-white hover:bg-[#3d5c27]'}`}
       >
         Book Now
       </Button>
