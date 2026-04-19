@@ -12,7 +12,7 @@ export const PharmacyFeatures: React.FC = () => {
         <div className="flex flex-col gap-6 mb-16">
           {pharmacyContent.features.map((feature, idx) => (
             <div 
-              key={idx} 
+              key={idx}
               className="bg-white rounded-2xl p-8 border-l-8 border-[#AEC0A1] shadow-sm transition-transform hover:translate-x-2 duration-300"
             >
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">{feature.title}</h3>
