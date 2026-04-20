@@ -39,7 +39,7 @@ export const Departments: React.FC = () => {
         </div>
 
         <div className="mt-20">
-          <Button variant="primary" className="px-12 py-4 text-lg">
+          <Button variant="primary" className="px-12 py-4 text-lg" to='/services/general-primary-care'>
             View all Services
           </Button>
         </div>

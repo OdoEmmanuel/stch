@@ -26,6 +26,6 @@ export const mainNavigation: NavItem[] = [
       { label: 'Pharmacy Services', href: '/services/pharmacy' },
     ]
   },
-  { label: 'Outreach', href: '/outreach', hasDropdown: true },
-  { label: 'Customer Support', href: '/support', hasDropdown: true },
+  { label: 'Outreach', href: '/outreach' },
+  { label: 'Customer Support', href: '/support' },
 ];

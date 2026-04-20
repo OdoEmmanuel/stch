@@ -16,6 +16,8 @@ import DiagnosticServices from './pages/Services/DiagnosticServices';
 import SurgicalServices from './pages/Services/SurgicalServices';
 import TherapyRehab from './pages/Services/TherapyRehabilitation';
 import PharmacyServices from './pages/Services/PharmacyServices';
+import OutreachPage from './pages/Outreach';
+import CustomerSupport from './pages/CustomerSupport';
 
 const App: React.FC = () => {
   return (
@@ -35,6 +37,8 @@ const App: React.FC = () => {
           <Route path="/services/surgical" element={<SurgicalServices />} />
           <Route path="/services/therapy-rehabilitation" element={<TherapyRehab />} />
           <Route path="/services/pharmacy" element={<PharmacyServices />} />
+          <Route path="/outreach" element={<OutreachPage />} />
+          <Route path="/support" element={<CustomerSupport />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
