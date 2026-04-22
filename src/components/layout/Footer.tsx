@@ -97,7 +97,7 @@ export const Footer: React.FC = () => {
               <div className="flex gap-4">
                 <MapPin className="text-[#4F7733] shrink-0" size={24} />
                 <span className="text-sm md:text-base leading-snug">
-                  123 Catholic Mission Road, Ojodu Berger, Lagos, Nigeria.
+                  18/19 Otunba St, off Yakoyo Road, Ojodu, 101233, Lagos
                 </span>
               </div>
               <div className="flex gap-4 items-center">

@@ -109,7 +109,7 @@ export const departments: DepartmentItem[] = [
 export const heroSlides: HeroSlide[] = [
   {
     image: hero1,
-    title: "CONSULT WITH OUR \n DOCTORS",
+    title: "CONSULT OUR \n DOCTORS",
     description: "We provide safe, high-quality care rooted in respect and compassion. At St. Timothy Hospital, our doctors serve with expertise and faith-driven dedication."
   },
   {

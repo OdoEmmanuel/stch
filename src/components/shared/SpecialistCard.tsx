@@ -30,9 +30,8 @@ export const SpecialistCard: React.FC<SpecialistCardProps> = ({
   const heartIconColor = isHighlighted ? 'text-white' : 'text-[#4F7733]';
 
   return (
-    <div className={`relative w-full rounded-4xl p-6 sm:p-8 transition-transform duration-300 hover:-translate-y-1 ${bgStyle}`}>
+    <div className={`relative flex flex-col w-full rounded-4xl p-6 sm:p-8 transition-transform duration-300 hover:-translate-y-1 ${bgStyle}`}>
       
-      {/* Top Section: Rating and Heart Icon */}
       <div className="flex justify-between items-start mb-6">
         <div className="flex items-center gap-1.5 bg-white/20 backdrop-blur-md rounded-full px-3 py-1 text-sm font-bold text-gray-900 shadow-sm">
           <Star className="text-yellow-400" size={16} fill="currentColor" />
@@ -61,7 +60,7 @@ export const SpecialistCard: React.FC<SpecialistCardProps> = ({
       </div>
 
       <Button 
-        className={`w-full py-4 text-base font-bold rounded-full ${isHighlighted ? 'bg-white text-[#4F7733]! hover:bg-gray-200' : 'bg-[#4F7733] text-white hover:bg-[#3d5c27]'}`}
+        className={`w-full py-4 text-base font-bold mt-auto rounded-full ${isHighlighted ? 'bg-white text-[#4F7733]! hover:bg-gray-200' : 'bg-[#4F7733] text-white hover:bg-[#3d5c27]'}`}
       >
         Book Now
       </Button>

@@ -19,7 +19,6 @@ export const Hero: React.FC<HeroProps> = ({ slides }) => {
   return (
     <section className="relative w-full h-screen min-h-150 flex items-center justify-center overflow-hidden bg-gray-900">
 
-      {/* Background */}
       <AnimatePresence mode="wait">
         <motion.img
           key={`bg-${currentIndex}`}
@@ -35,10 +34,8 @@ export const Hero: React.FC<HeroProps> = ({ slides }) => {
 
       <div className="absolute inset-0 bg-black/50 z-10" />
 
-      {/* Main Content */}
       <div className="relative z-20 w-full max-w-7xl px-4 md:px-8 text-center mt-12">
 
-        {/* Emergency Badge */}
         <div className="flex items-center justify-center gap-2 mb-6">
           <div className="bg-[#4F7733] rounded text-white p-0.5">
             <CheckSquare width={20} height={20} />
@@ -46,7 +43,6 @@ export const Hero: React.FC<HeroProps> = ({ slides }) => {
           <span className="text-white text-sm md:text-lg font-medium">Open 24/7 for Emergencies</span>
         </div>
 
-        {/* Dynamic Text */}
         <AnimatePresence mode="wait">
           <motion.div
             key={`content-${currentIndex}`}
@@ -64,7 +60,6 @@ export const Hero: React.FC<HeroProps> = ({ slides }) => {
           </motion.div>
         </AnimatePresence>
 
-        {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button variant="primary" className="w-full sm:w-auto bg-[#4F7733] px-8 py-3 text-sm md:text-base">
             Book an Appointment
@@ -79,7 +74,6 @@ export const Hero: React.FC<HeroProps> = ({ slides }) => {
         </div>
       </div>
 
-      {/* Floating Elements (Responsive hiding for very small screens) */}
       <div className="hidden md:flex absolute bottom-12 left-12 z-20 bg-[#FFF0F0] rounded-3xl px-5 py-2 items-center gap-2 shadow-xl border border-white/30 min-w-40 flex-col">
         <div className="flex items-center gap-4 w-full">
           <div className="w-4 h-4 rounded-full bg-[#FDDADA] flex items-center justify-center shrink-0">

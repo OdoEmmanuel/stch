@@ -31,9 +31,23 @@ export const ServiceCareCard: React.FC<ServiceCareCardProps> = ({
       : badge.toLowerCase() === "scheduled"
         ? "text-amber-700"
         : "text-blue-600";
+  
   const isUrgent =
     type.toLowerCase().includes("emergency") ||
     type.toLowerCase().includes("maternity");
+
+  const renderActionLabel = (label: string) => {
+    if (label.includes(":")) {
+      const [title, value] = label.split(":");
+      return (
+        <span className="flex flex-wrap justify-center gap-x-1 leading-tight">
+          <span className="opacity-95">{title}:</span>
+          <span className="whitespace-nowrap">{value}</span>
+        </span>
+      );
+    }
+    return label;
+  };
 
   return (
     <div
@@ -83,17 +97,22 @@ export const ServiceCareCard: React.FC<ServiceCareCardProps> = ({
         >
           <Button
             to={primaryAction.href}
-            className={`bg-[#4F7733] text-white text-sm py-3.5 ${isWide ? "flex-1" : "w-full"}`}
-            icon={isUrgent ? <Phone size={18} /> : undefined}
+            className={`bg-[#4F7733] text-white text-sm py-3.5 px-4 ${
+              isWide ? "flex-1" : "w-full"
+            }`}
+            icon={isUrgent ? <Phone size={18} className="shrink-0" /> : undefined}
           >
-            {primaryAction.label}
+            {renderActionLabel(primaryAction.label)}
           </Button>
+          
           <Button
             to={secondaryAction?.href || "/contact"}
             variant="outline"
-            className={`border-white text-white text-sm py-3.5 hover:bg-white/10 ${isWide ? "flex-1" : "w-full"}`}
+            className={`border-white text-white text-sm py-3.5 px-4 hover:bg-white/10 ${
+              isWide ? "flex-1" : "w-full"
+            }`}
           >
-            {secondaryAction?.label || "Contact us"}
+            {renderActionLabel(secondaryAction?.label || "Contact us")}
           </Button>
         </div>
       </div>
